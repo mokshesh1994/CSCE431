@@ -31,7 +31,7 @@ def sum_to_n? arr, n
 
   return false
 =end  
-#(arr.empty? && n.zero?) || arr.permutation(2).any? { |a, b| a + b == n }
+
 !!arr.uniq.combination(2).detect { |a, b| a + b == n }
 end
 
